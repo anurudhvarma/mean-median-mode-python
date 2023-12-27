@@ -1,0 +1,32 @@
+#Mean - It is the average value of all the values in a dataset. To calculate mean, all the values needs to be added and the sum needs to be a divided by the total number of values present in the dataset. 
+
+no_of_cars = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+mean = sum(no_of_cars)/ len(no_of_cars) 
+print(mean) 
+
+#Median - It is the middle value among all the values in a sorted order. Before calculating median, it is necessary to arrange all the values in an order. 
+
+no_of_cars = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+no_of_cars.sort() 
+
+if len(no_of_cars) % 2 == 0: 
+  m1 = no_of_cars[len(no_of_cars)//2] 
+  m2 = no_of_cars[len(no_of_cars)//2 - 1] 
+  median = (m1 + m2) / 2
+else: 
+  median = no_of_cars[len(no_of_cars)//2] 
+print(median) 
+
+#Mode - It is the most frequently occuring value among all the values present in a dataset. 
+
+list1 = [20, 20, 30, 40, 30, 50, 20, 60, 60, 50, 40] 
+frequency = {} 
+for i in list1: 
+  frequency.setdefault(i, 0) 
+  frequency[i]+=1  
+
+frequent = max(frequency.values()) 
+for i, j in frequency.items(): 
+  i, j == frequent: 
+    mode = i 
+print(mode) 
